@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro {
+    text-align: center;
+    padding: 100px 20px; /* More padding for emphasis */
+    color: #fff;
+    background-image: url(https://www.holidify.com/images/bgImages/BALI.jpg); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 40px 20px; /* Increased margin for spacing */
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.highlights h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.highlight {
+    margin: 10px 0; /* Vertical spacing between highlight items */
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%; /* Set a width for better layout */
+}
+#attractions {
+    margin: 20px;
+}
+
+.attraction {
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    margin-bottom: 40px; /* Spacing between boxes */
+    border-radius: 8px;
+    color: #fff; /* Text color for contrast */
+    position: relative; /* Relative positioning for pseudo-element */
+}
+
+.attraction h3 {
+    margin: 0 0 10px; /* Space below heading */
+}
+
+.attraction p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: To enhance readability over background images */
+.attraction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 8px; /* Match the box corners */
+    z-index: 1; /* Place below text */
+}
+
+.attraction h3, .attraction p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Bring text above overlay */
+}
+#travel-tips {
+    margin: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.tip-category {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.tip-category h3 {
+    margin-top: 0; /* Remove default top margin */
+}
+
+.tip-category ul {
+    list-style-type: square; /* Change list style */
+    padding-left: 20px; /* Indent list */
+    #gallery {
+        margin: 20px;
+        text-align: center; /* Center align gallery heading */
+    }
+}
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+        gap: 15px; /* Space between grid items */
+        padding: 20px; /* Padding around the grid */
+    }
+    
+    .gallery-item {
+        position: relative;
+        overflow: hidden; /* Ensure images do not overflow their containers */
+        border-radius: 8px; /* Rounded corners for images */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }    
+    .gallery-item img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove bottom gap */
+    }
+    
+    .caption {
+        background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+        padding: 10px;
+        border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+        text-align: center; /* Center text */
+        color: #333; /* Dark text for readability */
+        font-weight: bold; /* Bold caption */
+    }
+
+    
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
